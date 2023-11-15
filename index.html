@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Food</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>The Food</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#pedidos">Pedidos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Bienvenido al Restaurante The Food</h2>
+        <p>La mejor Experiencia en Sabores de nuestra tierra.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Menú</h2>
+
+        <div class="producto" onclick="agregarAlCarrito('Pizza', 30000)">
+            <h2>Pizza</h2>
+            <img src="Imagenes/pizza.jpg">
+            <p class="producto-descripcion">Deliciosa pizza con triple queso, peperoni y salami cubierta en capa de
+                queso de bufala</p>
+            <p class="producto-precio">$ 30.000</p>
+        </div>
+
+        <div class="producto" onclick="agregarAlCarrito('PizzaPersonal', 19000)">
+            <h2>Pizza Personal</h2>
+            <img src="Imagenes/pizza2.jpg">
+            <p class="producto-descripcion">Deliciosa pizza personal, pollo, carnes y vegetariana</p>
+            <p class="producto-precio">$ 19.000</p>
+        </div>
+
+        <div class="producto" onclick="agregarAlCarrito('Hamburguesa', 38000)">
+            <h2>Hamburguesa</h2>
+            <img src="Imagenes/hamburguesa.jpg">
+            <p class="producto-descripcion">Deliciosa Hamburguesas con triple carne, cebolla, tomate, en pan Gourtmet
+            </p>
+            <p class="producto-precio">$ 38.000</p>
+        </div>
+
+        <div class="producto" onclick="agregarAlCarrito('HamburguesaMaxi', 45000)">
+            <h2>Hamburguesa Maxi</h2>
+            <img src="Imagenes/triple carne.jpg">
+            <p class="producto-descripcion">Deliciosa hamburguesa de 3 carnes de pollo y res</p>
+            <p class="producto-precio">$ 45.000</p>
+        </div>
+
+        <div class="producto" onclick="agregarAlCarrito('HamburguesaNegra', 32000)">
+            <h2>Hamburguesa Negra</h2>
+            <img src="Imagenes/hamburguesa negra.jpg">
+            <p class="producto-descripcion">Exquisita hamburguesa negra doble carne con pan artesanal</p>
+            <p class="producto-precio">$ 32.000</p>
+        </div>
+
+        <div class="producto" onclick="agregarAlCarrito('Perro', 25000)">
+            <h2>Perro Caliente</h2>
+            <img src="Imagenes/perro.jpg">
+            <p class="producto-descripcion">Delicioso perro caliente con tocineta y jalapeños</p>
+            <p class="producto-precio">$ 25.000</p>
+        </div>
+
+        <div class="producto" onclick="agregarAlCarrito('PerroSencillo', 18000)">
+            <h2>Perro Caliente Sencillo</h2>
+            <img src="Imagenes/perro2.jpg">
+            <p class="producto-descripcion">Delicioso perro caliente sencillo con salsa chedar</p>
+            <p class="producto-precio">$ 18.000</p>
+        </div>
+
+        <div class="producto" onclick="agregarAlCarrito('BombonPollo', 35000)">
+            <h2>Bombon de Pollo</h2>
+            <img src="Imagenes/bombonpollo.jpg">
+            <p class="producto-descripcion">Delicioso bombon de pollo con salsa de queso</p>
+            <p class="producto-precio">$ 35.000</p>
+        </div>
+
+        <div class="producto" onclick="agregarAlCarrito('BombonPollo', 25000)">
+            <h2>Burrito</h2>
+            <img src="Imagenes/burrito.jpg">
+            <p class="producto-descripcion">Delicios burrito mixto con vegetales</p>
+            <p class="producto-precio">$ 25.000</p>
+        </div>
+
+        <div class="producto" onclick="agregarAlCarrito('Quesadilla', 22000)">
+            <h2>Quesadillas</h2>
+            <img src="Imagenes/quesadilla.jpg">
+            <p class="producto-descripcion">Deliciosas quesadillas de pollo y queso x4 unidades</p>
+            <p class="producto-precio">$ 22.000</p>
+        </div>
+
+        <div class="producto" onclick="agregarAlCarrito('QuesadillaVegana', 32000)">
+            <h2>Quesadillas Veganas</h2>
+            <img src="Imagenes/quesavegana.jpg">
+            <p class="producto-descripcion">Deliciosas quesadillas veganas de champoñones y queso feta x4 unidades</p>
+            <p class="producto-precio">$ 32.000</p>
+        </div>
+
+        <div class="producto" onclick="agregarAlCarrito('Sushix30', 50000)">
+            <h2>Sushi 30 Bocados</h2>
+            <img src="Imagenes/sushi.jpg">
+            <p class="producto-descripcion">Bamdeja de sushi x 30 bocados sabores disponibles: Maki, Uramaki, Filadelfia
+                Roll y Dragon Roll</p>
+            <p class="producto-precio">$ 50.000</p>
+        </div>
+
+        <div class="producto" onclick="agregarAlCarrito('Sushix10', 20000)">
+            <h2>Sushi 10 Bocados</h2>
+            <img src="Imagenes/sushi2.jpeg">
+            <p class="producto-descripcion">Delicioso sushi x 10 bocados sabores disponibles: Maki, Uramaki, Filadelfia
+                Roll y Dragon Roll</p>
+            <p class="producto-precio">$ 20.000</p>
+        </div>
+
+
+    </section>
+
+    <section id="pedidos">
+        <h2>Pedidos</h2>
+
+        <div id="carrito">
+            <h3>Carrito de compras</h3>
+            <ul id="lista-pedidos">
+                <!-- Los elementos del carrito se agregarán aquí dinámicamente con JavaScript -->
+            </ul>
+            <p id="total">Total: $0</p>
+            <button onclick="realizarPedido()">Realizar Pedido</button>
+
+            <!-- Nuevo botón para abrir formulario en ventana nueva -->
+            <button onclick="abrirFormulario()">Abrir Formulario</button>
+        </div>
+    </section>
+    </div>
+
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctanos:</h2>
+        Teléfono: 601 233 3333 <br>
+        Email: servicioalcliente@thefood.com
+    </section>
+
+    <footer>
+        <p>&copy; The Food.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
